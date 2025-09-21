@@ -1,7 +1,10 @@
 ---
+import ColiDesktop from '../components/ColiDesktop.astro';
+import ColiMobile from '../components/ColiMobile.astro';
 ---
 
 <main>
+    <ColiDesktop />
      <h1>colidevs.</h1>
      <h3>Creala en 10 minutos</h3>
      <div class="contentSlogan">
@@ -15,6 +18,7 @@
      target="_blank" rel="noopener noreferrer" class="buttonContactar" >
      Agendar una reunion
     </a>
+    <ColiMobile />
 </main>
 
 
@@ -24,10 +28,12 @@
         flex-direction: column; 
         justify-content: center; 
         align-items: center;
-        gap: 1rem;
-        height: 80vh; 
-        width: 100vw; 
-        position: relative;
+        gap: 1rem; 
+        /* width: 100vw; 
+        height: 100vh;
+        min-height: 100vh;
+        position: relative; */
+        flex: 1;
     }
     
     h1{

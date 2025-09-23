@@ -4,6 +4,16 @@ import Bakcground from '../components/Background.astro';
 
 ---
 <div>
+	<div class="layout">
+		<Layout>
+	</div>
 	<Bakcground />
-	<Layout>
 </div>
+
+
+<style>
+	.layout{
+		position: relative;
+		z-index: 1; /* Asegura que el layout esté por encima del fondo */
+	}
+</style>

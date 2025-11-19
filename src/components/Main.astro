@@ -6,7 +6,7 @@ import ColiMobile from '../components/ColiMobile.astro';
 <main>
     <ColiDesktop />
      <h1>colidevs.</h1>
-     <h3>⚡ rápida atención</h3>
+     <h3>Soporte inmediato</h3>
      <div class="contentSlogan">
          <p class="slogan">Digitalizá y automatizá </p>
          <p class="slogan">en tu negocio.</p>
@@ -16,10 +16,20 @@ import ColiMobile from '../components/ColiMobile.astro';
       Desde gestión de archivos y facturas hasta chatbots, lo <b>solucionamos</b> para vos.
      </p>
      
-         <a href="https://api.whatsapp.com/send?phone=541176436206&text=Hola%20%F0%9F%91%8B%20Estoy%20interesad%40%20en%20tener%20mi%20colistore%20%C2%BFMe%20pod%C3%A9s%20pasar%20m%C3%A1s%20info%3F" 
+         <!-- <a href="https://api.whatsapp.com/send?phone=541176436206&text=Hola%20%F0%9F%91%8B%20Estoy%20interesad%40%20en%20tener%20mi%20colistore%20%C2%BFMe%20pod%C3%A9s%20pasar%20m%C3%A1s%20info%3F" 
          target="_blank" rel="noopener noreferrer" class="buttonContactar" >
          Empezá a resolver ⚙️
-        </a>
+        </a> -->
+        <div class="conteinerButtons">
+            <a href="https://api.whatsapp.com/send?phone=541176436206&text=Hola%20%F0%9F%91%8B%20Estoy%20interesad%40%20en%20tener%20mi%20colistore%20%C2%BFMe%20pod%C3%A9s%20pasar%20m%C3%A1s%20info%3F" 
+             target="_blank" rel="noopener noreferrer" class="buttonContactar" >
+             Empezá a resolver
+            </a>
+            <a href="https://colitienda.com" 
+             target="_blank" rel="noopener noreferrer" class="buttonContactar" >
+             colitienda
+            </a>
+        </div>
      <section class="preguntas">
     <ul>
       <li>¿Tenés dudas sobre qué herramientas usar para mejorar tus <b>redes sociales</b>?</li>
@@ -85,6 +95,11 @@ import ColiMobile from '../components/ColiMobile.astro';
         text-align: left;
     }
 
+    .conteinerButtons{
+        display: flex;
+        gap: 1rem;
+    }
+
     .buttonContactar{
         margin-top: 1rem;
         padding: .8rem 1.5rem;
@@ -95,11 +110,21 @@ import ColiMobile from '../components/ColiMobile.astro';
         font-weight: 500;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: box-shadow 0.3s,transform 0.5s;
+
+        width: 15rem;
+        text-align: center;
     }
+
+    .conteinerButtons a:nth-child(2) {
+  /* estilos especiales */
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+    border: 1px solid white;
+}
 
     .buttonContactar:hover{
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 
     .cta {

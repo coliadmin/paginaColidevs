@@ -1,0 +1,170 @@
+---
+import ColiDesktop from '../components/ColiDesktop.astro';
+import ColiMobile from '../components/ColiMobile.astro';
+---
+
+<main>
+  <ColiDesktop />
+
+  <header>
+    <h2 class="brand">colidevs.</h2>
+  </header>
+
+  <section class="intro">
+    <span class="badge">⚡ rápida atención</span>
+    <h1>Digitalizá y automatizá en tu negocio.</h1>
+    <p class="description">
+      Sacate las dudas, <b>analizamos</b> tu organización y <b>diseñamos</b> un plan.
+      Desde gestión de archivos y facturas hasta chatbots, lo <b>solucionamos</b> para vos.
+    </p>
+
+    <a href="#contacto" class="home-btn">Empezá a resolver ⚙️</a>
+
+  </section>
+
+  <section class="preguntas">
+    <ul>
+      <li>¿Tenés dudas sobre qué herramientas usar para mejorar tus <b>redes sociales</b>?</li>
+      <li>¿Querés una cuenta de <b>correo electrónico</b> con el nombre de tu negocio?</li>
+      <li>¿Sos una <b>ONG</b> y no sabés si te estás perdiendo de <b>beneficios</b>?</li>
+    </ul>
+    <p class="cta">
+      Consultá por nuestros <b>Servicios TI</b> y empezá a estructurar tu organización.
+    </p>
+  </section>
+
+  <!-- <footer>
+    <p class="copy">© {new Date().getFullYear()} colidevs</p>
+    <div class="social">
+      <a href="https://www.instagram.com/colidevs" target="_blank" rel="noopener noreferrer">📷</a>
+      <a href="https://api.whatsapp.com/send?phone=541176436206" target="_blank" rel="noopener noreferrer">💬</a>
+      <a href="https://x.com/colidevs" target="_blank" rel="noopener noreferrer">🐦</a>
+    </div>
+  </footer> -->
+
+  <ColiMobile />
+</main>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  header .brand {
+    font-size: 4rem;
+    /* margin-top: 1rem; */
+    font-weight: 200;
+    margin: 0;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    background-color: rgba(48, 48, 48, 0.76);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #ccc;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .home-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  /* border: 1px solid white; */
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+  background: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.home-btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+
+  .preguntas {
+    max-width: 500px;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .preguntas ul {
+    list-style: none;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid white;
+    border-radius: 10px;
+  }
+
+  .preguntas li {
+    margin-bottom: 0.8rem;
+  }
+
+  .cta {
+    margin-top: 1rem;
+    color: #f0f0f0;
+    font-weight: 400;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .social a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .copy {
+    color: #aaa;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    .description {
+      font-size: 0.9rem;
+    }
+    footer {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>

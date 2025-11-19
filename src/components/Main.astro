@@ -6,18 +6,30 @@ import ColiMobile from '../components/ColiMobile.astro';
 <main>
     <ColiDesktop />
      <h1>colidevs.</h1>
-     <h3>Creala en 10 minutos</h3>
+     <h3>⚡ rápida atención</h3>
      <div class="contentSlogan">
-         <p class="slogan">Conecta con tus sueños.</p>
-         <p class="slogan">Servicios y consultoria de TI</p>
+         <p class="slogan">Digitalizá y automatizá </p>
+         <p class="slogan">en tu negocio.</p>
      </div>
      <p class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem in labore aliquam asperiores et, vitae ratione cum nesciunt quis? Aspernatur suscipit quaerat eum deserunt, pariatur molestiae sed quos obcaecati beatae?
+        Sacate las dudas, <b>analizamos</b> tu organización y <b>diseñamos</b> un plan.
+      Desde gestión de archivos y facturas hasta chatbots, lo <b>solucionamos</b> para vos.
      </p>
-     <a href="https://api.whatsapp.com/send?phone=541176436206&text=Hola%20%F0%9F%91%8B%20Estoy%20interesad%40%20en%20tener%20mi%20colistore%20%C2%BFMe%20pod%C3%A9s%20pasar%20m%C3%A1s%20info%3F" 
-     target="_blank" rel="noopener noreferrer" class="buttonContactar" >
-     Agendar una reunion
-    </a>
+     
+         <a href="https://api.whatsapp.com/send?phone=541176436206&text=Hola%20%F0%9F%91%8B%20Estoy%20interesad%40%20en%20tener%20mi%20colistore%20%C2%BFMe%20pod%C3%A9s%20pasar%20m%C3%A1s%20info%3F" 
+         target="_blank" rel="noopener noreferrer" class="buttonContactar" >
+         Empezá a resolver ⚙️
+        </a>
+     <section class="preguntas">
+    <ul>
+      <li>¿Tenés dudas sobre qué herramientas usar para mejorar tus <b>redes sociales</b>?</li>
+      <li>¿Querés una cuenta de <b>correo electrónico</b> con el nombre de tu negocio?</li>
+      <li>¿Sos una <b>ONG</b> y no sabés si te estás perdiendo de <b>beneficios</b>?</li>
+    </ul>
+    <p class="cta">
+      Consultá por nuestros <b>Servicios TI</b> y empezá a estructurar tu organización.
+    </p>
+  </section>
     <ColiMobile />
 </main>
 
@@ -89,6 +101,10 @@ import ColiMobile from '../components/ColiMobile.astro';
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         transform: scale(1.1);
     }
+
+    .cta {
+    text-align: center;
+  }
     
      @media (max-width: 500px) {
         main{
